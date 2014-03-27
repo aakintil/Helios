@@ -1,0 +1,283 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  HTML TAGS
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+a { @include transition(.3s); color: $color-grey-dark; outline: none !important;
+  &:hover { color: $color-primary; text-decoration: none; ; }
+}
+blockquote { border: none;
+  footer { color: $color-grey-dark; font-weight: bold; font-size: 100%;
+    &:before { display: none; }
+  }
+  p { font-size: 18px; }
+}
+body { -webkit-font-smoothing: antialiased; background-color: #fff; color: $color-grey-dark; font-family: 'Montserrat', 'Arial', sans-serif; font-size: 14px; }
+dl {
+  dt { float: left; margin-right: 20px; }
+  dd { margin-bottom: 10px; }
+}
+h1 { font-size: 72px; text-transform: uppercase; }
+h2 { font-size: 36px; margin-bottom: 80px; text-transform: uppercase; position: relative; }
+h3 { font-size: 24px; margin-bottom: 80px; margin-top: 10px; position: relative; }
+h4 { font-size: 18px; font-weight: bold; text-transform: uppercase; }
+img { max-width: 100%; }
+section { overflow: hidden; position: relative; }
+p { @include opacity(.5); font-size: 14px; line-height: 24px; }
+//----end HTML TAGS
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  UNIVERSAL CLASSES FOR USE IN HTML
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+.background { height: 100%; position: absolute; top: 0; width: 100%; z-index: -1; }
+.center-image { bottom: 0; display: inline-block !important; left: 0; margin: auto; right: 0; top: 0; position: absolute; width: inherit !important; }
+
+// Background color for elements or blocks
+  .background-color-grey-dark { background-color: $color-grey-dark; }
+  .background-color-grey-light { background-color: $color-grey-light; }
+  .background-color-grey-footer { background-color: $color-grey-footer; }
+  .background-color-primary { background-color: $color-primary; }
+  .background-color-secondary { background-color: $color-secondary; }
+.center { text-align: center !important;}
+.font-color-light { color: #fff !important; }
+.font-color-dark { color: $color-grey-dark !important; }
+.has-opacity { @include opacity(.5); }
+.has-subtitle { margin-bottom: -5px; }
+.has-parallax { height: 100%; }
+.menu-child-align-left { left: 0 !important;
+  //&:after { border-color: transparent transparent $color-grey-light transparent; border-style: solid; border-width: 0 7.5px 7px 7.5px; content: ""; height: 0px; position: absolute; left: 30px; top: -7px; width: 0px; }
+}
+.menu-child-align-right { right: 0!important;
+  //&:after { border-color: transparent transparent $color-grey-light transparent; border-style: solid; border-width: 0 7.5px 7px 7.5px; content: ""; height: 0px; position: absolute; right: 30px; top: -7px; width: 0px; }
+  &:after { left: inherit !important; right: 30px !important;  }
+}
+.regular-case { text-transform: none; }
+
+.reset-margin { margin: 0 !important; }
+// Opacity for elements
+  .opacity-1 { @include opacity(.01); }
+  .opacity-2 { @include opacity(.02); }
+  .opacity-3 { @include opacity(.03); }
+  .opacity-4 { @include opacity(.04); }
+  .opacity-5 { @include opacity(.05); }
+  .opacity-6 { @include opacity(.06); }
+  .opacity-7 { @include opacity(.07); }
+  .opacity-8 { @include opacity(.08); }
+  .opacity-9 { @include opacity(.09); }
+  .opacity-10 { @include opacity(.1); }
+  .opacity-20 { @include opacity(.2); }
+  .opacity-30 { @include opacity(.3); }
+  .opacity-40 { @include opacity(.4); }
+  .opacity-50 { @include opacity(.5); }
+  .opacity-60 { @include opacity(.6); }
+  .opacity-70 { @include opacity(.7); }
+  .opacity-80 { @include opacity(.8); }
+  .opacity-90 { @include opacity(.9); }
+//----end UNIVERSAL CLASSES FOR USE IN HTML
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//  STYLING
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Address
+.address {
+  p { @include opacity(1); margin-left: 35px; padding: 30px 0; }
+  .icon { color: $color-primary; font-size: 18px; }
+}
+
+// Block
+.block { padding: 80px 0; }
+
+// Breadcrumb
+.breadcrumb { background-color: transparent; margin-bottom: 30px; margin-top: 20px; padding: 0; font-size: 10px; }
+
+// Counting Numbers
+.counting-numbers {
+  .counting-number {
+    .number { color: $color-grey-dark; font-size: 48px; font-weight: bold; margin-bottom: -10px; }
+    .description { color: $color-grey-dark; font-size: 18px; font-weight: bold; text-transform: uppercase; }
+  }
+}
+
+// Divider
+.divider { display: inline-block; height: 3px; margin-bottom: 20px; margin-top: 20px; width: 30px; }
+
+// Feature box
+.feature { margin-bottom: 30px;
+  figure { display: inline-block; float: left; }
+  .feature-content { padding-left: 65px; padding-top: 5px; }
+}
+
+//  FlexSlider reset styling
+.flexslider { @include box-shadow(none); @include border-radius(0px); background: none; border: none; margin: 0; height: 100%; overflow: hidden;
+  .flex-control-nav { bottom: 10px; z-index: 2;
+    li {
+      a { border: 2px solid rgba(255,255,255,0.4);
+        &.flex-active { border: 2px solid rgba(255,255,255,0.8); }
+      }
+    }
+  }
+}
+
+// Map
+#map { height: 400px; margin-bottom: 30px; }
+
+// Pagination
+.pagination {
+  li {
+    a { @include border-radius(0px);  border: 2px solid rgba(0,0,0,.4); color: $color-grey-dark; margin-left: 5px; padding: 10px 16px;
+      &:hover { background-color: transparent; border: 2px solid rgba(0,0,0,.8); color: $color-grey-dark; }
+    }
+    &.active {
+      a { background-color: $color-primary; border: 2px solid $color-primary;
+        &:hover, &:focus, &:active { background-color: $color-primary; border: 2px solid $color-primary; }
+      }
+    }
+    &:first-child, &:last-child {
+      a { @include border-radius(0px); }
+    }
+  }
+}
+
+// Paragraph in citation
+p.cite { font-size: 24px; line-height: 30px; }
+
+// Portfolio Filter
+.portfolio-filter { margin-bottom: 30px;
+  ul {
+    li { display: inline-block; margin-right: 10px;
+      a { @include opacity(.3);
+        &.current { @include opacity(1); }
+      }
+    }
+  }
+}
+
+// Portfolio Thumbnail
+.portfolio-item { @include opacity(.7); @include transition(.4s); margin-bottom: 30px; position: relative;
+  img { @include transition(.4s); position: relative; z-index: 10; }
+  //.link-area { background-color: darken($color-grey-dark, 8%); height: 100%; width: 100%; position: relative;}
+  .portfolio-caption { @include opacity(0); @include scale(.7); @include transition(.4s); background-color: darken($color-grey-dark, 3%); color:#fff; height: 100%; padding: 20px; position: absolute; text-align: center; width: 100%;
+    h4 { font-size: 18px; font-weight: normal; margin: 0; }
+    strong { @include opacity(.5);  font-size: 12px; }
+  }
+  .portfolio-detail-btn { @include opacity(0); @include transition(.4s); bottom: 25px; color: #fff; display: inline-block; position: absolute; right: 20px; z-index: 1;
+    i { color: $color-primary; margin-left: 10px; vertical-align: middle; position: relative; top: -2px; }
+  }
+  &:hover { @include opacity(1);
+    img { @include scale(.55); }
+    .portfolio-caption { @include opacity(1); @include scale(1); }
+    .portfolio-detail-btn { @include opacity(1); }
+  }
+}
+
+// Price box
+.price-box { margin-bottom: 60px; position: relative;
+  .price-box-header { background-color: $color-grey-dark; color: #fff; padding: 20px 0; position: relative; text-align: center; text-transform: uppercase;
+    &:after { bottom: -7px; border-color: $color-grey-dark transparent transparent transparent; border-style: solid; border-width: 7px 7.5px 0 7.5px; content: ""; height: 0px; left: 0; margin: auto; position: absolute; right: 0; width: 0px; }
+    h4 { font-size: 36px; margin-bottom: 0; }
+    h5 { font-size: 18px; margin-top: 0; position: relative; }
+    .price { font-size: 30px; margin-top: 0px; }
+    .interval { @include opacity(.6); font-size: 11px; }
+  }
+  .price-box-content { background-color: $color-grey-light; padding-bottom: 20px;
+    .price-box-list { @include opacity(.6); line-height: 45px; margin-bottom: 20px;
+      li { @include transition(.3s); border-bottom: 1px solid rgba(0,0,0,.1); }
+    }
+  }
+  &.promoted {
+    .price-box-content { background-color: lighten($color-grey-dark, 2%); }
+    .price-box-list { @include opacity(1); color: #fff;
+      li { border-bottom: 1px solid rgba(255,255,255,.1); }
+    }
+  }
+}
+
+// Read MOre link
+.read-more { @include transition(.3s); color: $color-grey-dark; padding-left: 0px;
+  &:hover { color: $color-primary; text-decoration: none; padding-left: 2px; }
+}
+
+// Scroll Down text on index page
+.scroll-down { bottom: 50px; position: absolute; z-index: 3; left: 0; right: 0; margin: auto; }
+
+
+// Section Title
+.section-title {
+  h2 {
+    &:after { background-color: $color-primary; bottom: -15px; content: ""; height: 3px; left: 0; margin: auto; position: absolute; right: 0; width: 30px; }
+    &:before { background-color: $color-secondary; content: ""; height: 3px; left: 0; margin: auto; position: absolute; right: 0; top: -15px; width: 30px; }
+    &.has-subtitle {
+      &:after { display: none; }
+    }
+  }
+  h3 {
+    &:after { background-color: $color-primary; bottom: -15px; content: ""; height: 3px; left: 0; margin: auto; position: absolute; right: 0; width: 30px; }
+  }
+}
+
+// Slider
+#slider { height: 900px; }
+.slides { height: 100%;
+  .slide-content { bottom: 20px; text-align: center;
+    .slide-wrapper { position: relative; z-index: 4;
+      h1 { background-color: rgba(0,0,0,.9); color: #fff; display: inline-block; margin: 20px 0; padding: 15px 20px; position: relative;
+        &:after { background-color: rgba(0,0,0,.9); bottom: -20px; content: ""; height: 8px; left: 0; margin: auto; position: absolute; right: 0; width: 175px; }
+        &:before { background-color: rgba(0,0,0,.9); content: ""; height: 8px; left: 0; margin: auto; position: absolute; right: 0; top: -20px; width: 175px; }
+      }
+    }
+  }
+}
+
+//  Tag
+.tag { @include transition(.3s); border: 2px solid rgba(0,0,0,.2); display: inline-block; font-size: 12px; padding: 3px 6px; margin: 10px 0;
+  &:hover { border: 2px solid rgba(0,0,0,.6); }
+}
+//  Team
+.team {
+  .team-member { margin-bottom: 50px;
+    .team-member-image { margin-bottom: 40px; position: relative;
+      .team-member-overlay { @include scale(0.7); @include opacity(0); @include transition(.3s); height: 100%; padding: 20px; position: absolute; text-align: center; width: 100%;
+        .social-wrapper { background-color: rgba(0,0,0,.9); display: table; height: 100%; width: 100%;
+          .social-inner { display: table-cell; vertical-align: middle;
+            .social {  height: 100%;  margin: 0 auto;
+              h5 { margin-bottom: 35px; text-transform: uppercase; }
+              .icon { @include transition(.5s); @include opacity(0.3); bottom: -40px; border: 2px solid #fff; color: #fff; margin-right: 5px; padding: 10px; position: relative; z-index: 3;
+                &:hover { @include opacity(1); }
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        .team-member-overlay { @include scale(1); @include opacity(1);
+          .social-wrapper {
+            .social-inner {
+              .social {
+                .icon {  bottom: 0px; }
+              }
+            }
+          }
+        }
+      }
+    }
+    .team-member-title {
+      h4 { font-size: 24px; font-weight: normal; position: relative;
+        &:after { background-color: $color-primary; bottom: -15px; content: ""; height: 3px; left: 0; margin: auto; position: absolute; right: 0; width: 30px; }
+        &:before { background-color: $color-secondary; content: ""; height: 3px; left: 0; margin: auto; position: absolute; right: 0; top: -15px; width: 30px; }
+        &.has-subtitle {
+          &:after { display: none; }
+        }
+      }
+      h5 { font-size: 14px; position: relative;
+        &:after { background-color: $color-primary; bottom: -15px; content: ""; height: 3px; left: 0; margin: auto; position: absolute; right: 0; width: 30px; }
+      }
+    }
+  }
+}
+
+// Testimonials Carousel
+.grabbing { cursor:url( ../img/grabbing.png ) 8 8, move; } // Cursor while grabbing
+.testimonial {
+  .client-picture { margin-bottom: 40px; }
+}
+
+//  Vanilla box pop-up background
+.vnbx-mask { background-color: rgba(0, 0, 0, 0.85); }

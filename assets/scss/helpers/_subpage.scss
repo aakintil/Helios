@@ -1,0 +1,23 @@
+.sub-page {
+  h2 { margin-bottom: 50px; margin-top: 0; }
+  #page-title { height: 150px; text-align: center;
+    .title { line-height: 175px;  position: absolute; left: 0; right: 0; margin: auto;
+      h1 { background-color: rgba(0,0,0,.8); color: #fff; display: inline-block; font-size: 48px; padding: 15px 20px; }
+    }
+  }
+
+  .blog-post { margin-bottom: 60px; }
+  //.block { padding: 45px 0px; }
+  .block { padding: 0; padding-bottom: 40px; }
+  //.block { padding: 0; }
+  .has-subtitle {
+    margin-bottom: -5px;
+  }
+  .header-solid { background-color: #fff !important; }
+  .navigation-wrapper { position: relative;  }
+
+  &.portfolio-detail {
+    h3 { margin-bottom: 30px; }
+  }
+
+}

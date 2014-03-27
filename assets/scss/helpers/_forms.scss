@@ -1,0 +1,77 @@
+.btn { @include border-radius(0px); @include transition(.2s); background: none; border: 3px solid transparent; display: inline-block; padding: 10px 20px; text-transform: uppercase; position: relative; z-index: 1;
+  &:active { @include box-shadow(none); bottom: -1px; }
+  &:after { @include transition(.2s); background: none; content: ""; height: 100%; width: 0%; position: absolute; left: 0; top: 0; z-index: -1; }
+  &:hover { @include border-radius(6px); }
+  &.btn-color-grey-dark { color: #fff; background-color: $color-grey-dark; border-color: $color-grey-dark; }
+  &.btn-color-grey-light { color: $color-grey-dark; background-color: #fff; border-color: #fff; }
+  &.btn-color-primary { color: #fff; background-color: $color-primary; border-color: $color-primary; }
+  &.btn-color-secondary { color: #fff; background-color: $color-secondary; border-color: $color-secondary; }
+
+  &.small { padding: 5px 10px; }
+
+  &.btn-framed { background: transparent; border: 3px solid $color-grey-dark; color: $color-grey-dark;
+    &:after { background: $color-grey-dark; }
+    &:hover { @include border-radius(0px); color: #fff;
+      &:after { background: $color-grey-dark; width: 100%; }
+    }
+    &.btn-color-grey-dark { color: $color-grey-dark; border-color: $color-grey-dark;
+      &:after { background: $color-grey-dark; }
+      &:hover { color: #fff;
+        &:after { background: $color-grey-dark; width: 100%; }
+      }
+    }
+    &.btn-color-grey-light { color: #fff; border-color: #fff;
+      &:after { background: #fff; }
+      &:hover { color: $color-grey-dark;
+        &:after { background: #fff; width: 100%; }
+      }
+    }
+    &.btn-color-primary { color: $color-primary; border-color: $color-primary;
+      &:after { background: $color-primary; }
+      &:hover { color: #fff;
+        &:after { background: $color-primary; width: 100%; }
+      }
+    }
+    &.btn-color-secondary { color: $color-secondary; border-color: $color-secondary;
+      &:after { background: $color-secondary; }
+      &:hover { color: #fff;
+        &:after { background: $color-secondary; width: 100%; }
+      }
+    }
+  }
+}
+
+#contactform {
+  textarea { min-height: 180px; }
+}
+
+.contact-form {
+  #form-status { color: green; line-height: 45px;
+    #valid {
+      .icon { font-size: 24px; margin-right: 10px; vertical-align: middle; }
+    }
+    #invalid { color: red; }
+  }
+  label.error { background-color: red; bottom: -15px; color: #fff;  font-size: 12px; left: 0;  padding: 5px; position: absolute; z-index: 2;
+    &:before { border-style: solid; border-width: 0 3.5px 5px 3.5px; border-color: transparent transparent red transparent; content: ""; height: 0px; left: 5px; position: absolute; top: -5px; width: 0px; }
+  }
+}
+
+.control-group {
+  .controls { position: relative; }
+}
+
+input { outline: none !important; }
+
+input[type="text"],input[type="email"], input[type="search"], textarea { @include border-radius(0px); @include transition(.4s); border: 3px solid rgba(0,0,0,.1); background-color: rgba(0,0,0,.03); margin-bottom: 20px; min-height: 60px; padding: 10px 15px; width: 100%; outline: none;
+  &:focus { background-color: #fff; border-color: rgba(0,0,0,.2); color: $color-grey-dark; }
+}
+input:invalid, textarea:invalid { box-shadow: none; }
+
+footer {
+  input[type="text"],input[type="email"], input[type="search"], textarea { @include border-radius(0px); @include transition(.4s); border: 3px solid rgba(255,255,255,.1); background-color: rgba(0,0,0,.1); margin-bottom: 20px; min-height: 60px; padding: 10px 15px; width: 100%; outline: none;
+    &:hover { border-color: rgba(255,255,255,.2); }
+    &:focus { background-color: #fff; border-color: #fff; color: $color-grey-dark; }
+  }
+  #form-status { color: #fff !important; }
+}

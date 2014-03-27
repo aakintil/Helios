@@ -1,0 +1,72 @@
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 1200px and more
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: 1200px ) {
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 992px - 1199px
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// 768px - 979px
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media (min-width: 768px) and (max-width: 991px) {
+  .description { font-size: 14px !important; }
+  .team-member-image {
+    img { width: 100%; }
+  }
+}
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// max to 767px
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@media (max-width: 767px) {
+  footer {
+    .social { float: left !important; }
+  }
+  h1 { font-size: 34px !important; }
+  h2 { font-size: 28px; margin-bottom: 50px; }
+  h3 { font-size: 18px; margin-bottom: 50px; }
+  img { width: inherit !important; max-width: 100%;  }
+  .block { padding: 40px 0; }
+  .blog-post {
+    .blog-post-content { padding-left: 70px; }
+    .date-circle { width: 60px; }
+  }
+  .blog-detail-page {
+    article {
+      .social { float: none !important; }
+    }
+  }
+  .copyright { margin-bottom: 30px; }
+  .child-navigation { opacity: 1 !important; visibility: visible !important; position: relative !important; top: 0 !important; background-color: transparent !important;
+    &:after, &:before { display: none !important; }
+  }
+  .icon-bar { background-color: $color-grey-dark; }
+  .navigation { background-color: #fff !important;
+    nav {
+      a {
+        &:after, &:before { display: none !important; }
+      }
+    }
+  }
+  .navbar-collapse { overflow: hidden; max-height: inherit !important; }
+  #page-title {
+    img { max-width: inherit !important; width: inherit !important; }
+  }
+  .portfolio-item {
+    img { width: 100% !important; }
+  }
+  .portfolio-filter {
+    ul {
+      li { display: block; margin-bottom: 10px; margin-right: 0px; }
+    }
+  }
+  .team-member-image {
+    img { width: 100% !important;; }
+  }
+}
