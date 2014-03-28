@@ -79,11 +79,11 @@ $(document).ready(function($) {
     });
 
     $(window).scroll(function () {
-
-        if ($(window).scrollTop() > 1) {
-            $('.navigation').addClass('header-solid');
+      // edited by derin
+        if ($(window).scrollTop() > 678) {
+            $('.home-body .navigation').addClass('header-solid');
         } else {
-            $('.navigation').removeClass('header-solid');
+            $('.home-body .navigation').removeClass('header-solid');
         }
 
 //  Parallax
