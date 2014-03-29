@@ -157,7 +157,8 @@
   margin-bottom: 0;
 }
 .navigation-wrapper .navigation .navbar .navbar-brand {
-  margin-top: -5px;
+/*  margin-top: -5px;*/
+    margin-top: -11px;
 }
 .navigation-wrapper .navigation .navbar .navbar-collapse {
   padding-right: 0px;
@@ -313,12 +314,13 @@ p {
 }
 
 .font-color-dark {
-  color: #292422 !important;
+  color: #292422;
 }
 
 .has-opacity {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
+/*  opacity: 0.5;*/
+  color: rgba(41,36,34, 0.5)
 }
 
 .has-subtitle {
@@ -794,7 +796,7 @@ p.cite {
   display: none;
 }
 .section-title h3:after {
-  background-color: #e23a00;
+  background-color: #F5831F;
   bottom: -15px;
   content: "";
   height: 3px;
