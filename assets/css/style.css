@@ -961,7 +961,7 @@ p.cite {
   width: 30px;
 }
 .team .team-member .team-member-title h4:before {
-  background-color: #face00;
+  background-color: #F5831F;
   content: "";
   height: 3px;
   left: 0;
@@ -979,7 +979,7 @@ p.cite {
   position: relative;
 }
 .team .team-member .team-member-title h5:after {
-  background-color: #e23a00;
+  background-color: #F5831F;
   bottom: -15px;
   content: "";
   height: 3px;
