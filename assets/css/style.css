@@ -770,6 +770,14 @@ p.cite {
   margin: auto;
 }
 
+.section-title.dropped {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+
 .section-title h2:after {
   background-color: #F5831F;
   bottom: -15px;
