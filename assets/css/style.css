@@ -775,7 +775,8 @@ p.cite {
   width: 100%;
   right: 0;
   left: 0;
-  z-index: 10;
+  z-index: 1;
+  top: 15px;
 }
 
 .section-title h2:after {
