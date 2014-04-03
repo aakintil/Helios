@@ -999,6 +999,10 @@ p.cite {
   width: 30px;
 }
 
+.team .team-member .team-member-title p.has-subtitle {
+  margin-top: 30px;
+}
+
 .grabbing {
   cursor: url(../img/grabbing.png) 8 8, move;
 }
