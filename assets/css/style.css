@@ -1280,7 +1280,8 @@ footer #form-status {
   margin: auto;
 }
 .sub-page #page-title .title h1 {
-  background-color: rgba(0, 0, 0, 0.8);
+/*  background-color: rgba(0, 0, 0, 0.8);*/
+  border: 3px solid white;
   color: #fff;
   display: inline-block;
   font-size: 48px;
@@ -1292,6 +1293,7 @@ footer #form-status {
 .sub-page .block {
   padding: 0;
   padding-bottom: 40px;
+  margin-top: 50px;
 }
 .sub-page .has-subtitle {
   margin-bottom: -5px;
