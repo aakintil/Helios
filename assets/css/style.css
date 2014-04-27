@@ -1471,20 +1471,9 @@ footer #form-status {
   width: 140px !important;
 }
 
-.portfolio-item.link {
-/*  background-color: #b2afaf;*/
-/*  border: 4px solid white;*/
-}
-.portfolio-item.link h4 {
-/*  color: white;*/
-}
 
-.portfolio-item:hover {
-
-/*  -webkit-transform: scale(0.9, 0.9);
-  -moz-transform: scale(0.55, 0.55);
-  -ms-transform: scale(0.55, 0.55);
-  -o-transform: scale(0.55, 0.55);*/
+.portfolio-item h2 {
+  margin-bottom: 20px;
 }
 
 .portfolio-item:hover img {
@@ -1502,7 +1491,7 @@ footer #form-status {
 }
 
 .portfolio-item:hover {
-  cursor: pointer;
+/*  cursor: pointer;*/
 }
 
 .project-brief.observation {
