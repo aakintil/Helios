@@ -655,11 +655,11 @@ p.cite {
   opacity: 1;
 }
 .portfolio-item:hover img {
-  -webkit-transform: scale(0.55, 0.55);
+/*  -webkit-transform: scale(0.55, 0.55);
   -moz-transform: scale(0.55, 0.55);
   -ms-transform: scale(0.55, 0.55);
   -o-transform: scale(0.55, 0.55);
-  transform: scale(0.55, 0.55);
+  transform: scale(0.55, 0.55);*/
 }
 .portfolio-item:hover .portfolio-caption {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -1477,19 +1477,25 @@ footer #form-status {
 }
 
 .portfolio-item:hover img {
-   border: 10px solid #F5831F; 
+/*   border: 10px solid #F5831F; 
   -webkit-transform: none; 
   -moz-transform: none;
   -ms-transform: none; 
-  -o-transform: none;
+  -o-transform: none;*/
 }
 
 
 .portfolio-item img {
-  margin-bottom: 50px;
-  border: 10px solid rgb(178, 175, 175);
+/*  margin-bottom: 50px;
+  border: 10px solid rgb(178, 175, 175);*/
 }
-
+.portfolio-wrap > li {
+  margin-bottom: 100px;
+}
+.portfolio-item > div {
+  margin-top: 30px;
+  padding-left: 0px;
+}
 .portfolio-item:hover {
 /*  cursor: pointer;*/
 }
