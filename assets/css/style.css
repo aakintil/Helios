@@ -19,6 +19,7 @@
   -o-animation-delay: 3s;
 }
 
+
 .navigation-wrapper {
   margin-top: 0px;
   position: fixed;
@@ -1492,10 +1493,19 @@ footer #form-status {
 .portfolio-wrap > li {
   margin-bottom: 100px;
 }
+
+#nav-next-steps .section-content .col-md-6,
 .portfolio-item > div {
   margin-top: 30px;
   padding-left: 0px;
 }
+
+#nav-next-steps .col-md-6 > img {
+  left: -10px;
+  position: relative;
+}
+
+
 .portfolio-item:hover {
 /*  cursor: pointer;*/
 }
