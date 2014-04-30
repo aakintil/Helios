@@ -1472,6 +1472,10 @@ footer #form-status {
   width: 140px !important;
 }
 
+.navbar-collapse > ul > .active > a {
+  color: #F5831F !important;
+}
+
 
 .portfolio-item h2 {
   margin-bottom: 20px;
@@ -1536,6 +1540,10 @@ footer #form-status {
   .navbar-resize {
     margin-top: 10px;
     font-size: 12px;
+  }
+  
+  .sub-page #page-title .title h1 {
+   font-size: 30px; 
   }
 
   .logo-width {
@@ -1606,11 +1614,11 @@ footer #form-status {
   }
 
   .icon-bar {
-    background-color: #292422;
+    background-color: white;
   }
 
   .navigation {
-    background-color: #fff !important;
+    background-color: black !important;
   }
   .navigation nav a:after, .navigation nav a:before {
     display: none !important;
