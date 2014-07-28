@@ -35,8 +35,8 @@
 }
 
 #design .cont {
-	margin-bottom: 100px; 
-	min-height: 570px; 
+	display: inline-block; 
+	margin-bottom: 80px; 
 }
 
 
