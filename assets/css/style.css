@@ -60,7 +60,9 @@
 	text-transform: uppercase; 
 }
 
-
+.no-mgB {
+	margin-bottom: 0 !important; 
+}
 
 
 /* ====================== */
