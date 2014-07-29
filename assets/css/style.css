@@ -18,7 +18,7 @@
 	/*	list-style-type: none; */
 }
 
-#design .cont > div {
+.cont > div {
 	padding: 0;
 }
 
@@ -34,7 +34,7 @@
 	margin: 10px 0; 
 }
 
-#design .cont {
+.cont {
 	display: inline-block; 
 	margin-bottom: 80px; 
 }
