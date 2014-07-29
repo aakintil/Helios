@@ -1,8 +1,5 @@
 /* ======= Custom ======= */
 
-#design .cont > div > p {
-	opacity: 0.8; 
-}
 
 #design .np-left {
 	padding-left: 0; 
@@ -12,27 +9,14 @@
 	padding-right: 0; 
 }
 
-#design .highlights {
-	opacity: 0.7; 
-	font-size: 13px; 
-	/*	list-style-type: none; */
-}
-
 .cont > div {
 	padding: 0;
 }
 
 #design .margin-top {
-	margin-top: 50px;
+	margin-top: -10px;
 }
 
-#design .kerning {
-	letter-spacing: 1px; 
-}
-
-#design .highlights li {
-	margin: 10px 0; 
-}
 
 .cont {
 	display: inline-block; 
